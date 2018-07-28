@@ -1,4 +1,9 @@
 
+var svgpie = d3.select("#piechart"),
+margin = {top: 20, right: 20, bottom: 20, left: 120},
+    width = 500 - margin.right - margin.left,
+    height = 500 - margin.top - margin.bottom,
+    radius = width/2;
 
 // color range
 var color = d3.scaleOrdinal()
