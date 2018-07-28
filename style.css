@@ -154,4 +154,17 @@ footer h3 {
   stroke: #fff;
 }
 
+#pie-header
+{
+  padding-right: 150px; 
+  font-size: 20px; 
+  font-weight: bold;
+  position: relative;
+}
 
+#pie-container
+{
+  float: right; 
+  width: 70%; 
+  text-align: center;
+}
