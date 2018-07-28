@@ -1,3 +1,9 @@
+   body {
+            background-color: #71808F;
+            margin: 0px;
+        }
+
+
 .arc text {
   font: 10px sans-serif;
   text-anchor: middle;
