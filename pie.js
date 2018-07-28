@@ -4,7 +4,8 @@ var margin = {top: 20, right: 20, bottom: 20, left: 20},
     radius = width/2;
 
 // color range
-var colors = d3.scale.category10();
+var color = d3.scaleOrdinal()
+    .range(["#7fc97f", "#beaed4", "#fdc086"]);
 
 // pie chart arc. Need to create arcs before generating pie
 var arc = d3.arc()
