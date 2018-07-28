@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE>
 <html lang="en">
 <head>
@@ -7,36 +5,87 @@
 <title>Pie Chart</title>
 
   <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  
 </head>
         <meta charset="utf-8">
-        <title>Pie Charts</title>
-    
+        <title>Pie Charts</title>    
         <!-- Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
+        <link rel="stylesheet" type="text/css" href="style.css">        
         <!-- Load D3 -->
-        <script src="//d3js.org/d3.v4.min.js" charset="utf-8"></script>
-        
-     
-        
-        
-    </head>
-    <body>
-        <h2>Pie Chart and Donut Chart</h2>
-      <div style="display: flex; width: 60%;height: 30%">
-        <div>
-            <center style="font-size: 30;padding-top: 10%;padding-left: 10">Pie</center>
-            <small style="padding-left: 10%">Fruit Pie</small>
-            <div style="margin:75px;"  id="chart"></div>
+        <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>   
+      
+</head>
+
+<main>
+    <!-- Landing Area -->
+    <div id="landing">
+      <div id="landing-text">
+        <div id="landing-text-inner">
+          <h1>Data Visualization</h1>
+          <h2>US State populations - 2018</h2>
+          <a href="#images" class="btn" id="view-work">
+            View Work
+          </a>
         </div>
-        <div>
-             <center style="font-size: 30;padding-top: 10%;padding-left: 10">Donut</center>
-             <small style="padding-left: 10%">Fruit Donut</small>
-            <div style="margin:75px;"  id="chart1"></div>
-        </div>   
+      </div>
+      <div id="landing-image"></div>
+    </div>
+
+    <div id="images">
+      <div id="header">
+        <h2>See Work</h2>
+      </div>
+
+    <div id="pie-container">
+
+				<p><b>USA | 343543</b></p>
+				<svg id="piechart" width="600" height="400"></svg>
+				  <script type="text/javascript" src="pie.js"></script> 
+							
+			</div>
+
+      <img src="https://source.unsplash.com/1600x900/?nature,water" alt="">
+      <div class="caption">
+        <h3>Photo One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+      </div>
+      <img src="https://source.unsplash.com/1600x900/?nature,trees" alt="">
+      <div class="caption">
+        <h3>Photo Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+      </div>
+      <img src="https://source.unsplash.com/1600x900/?nature,flowers" alt="">
+      <div class="caption">
+        <h3>Photo Three</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+      </div>
+      <img src="https://source.unsplash.com/1600x900/?nature,animals" alt="">
+      <div class="caption">
+        <h3>Photo Four</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+      </div>
+      <img src="https://source.unsplash.com/1600x900/?nature,clouds" alt="">
+      <div class="caption">
+        <h3>Photo Five</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <h3>Get In Touch</h3>
+    <p>Email or call us to set up a consult</p>
+    <p>Email:
+      <strong>contact@acmephotos.test</strong>
+    </p>
+    <p>Phone:
+      <strong>(617) 555-5555</strong>
+    </p>
+  </footer>
+
+
+
         
-        <script type="text/javascript" src="pie.js"></script>
 
         
     </body>
