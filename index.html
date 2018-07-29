@@ -1,20 +1,25 @@
 <!DOCTYPE>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Pie Chart</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- Compiled and minified JavaScript -->
-  
+  <!-- Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+  <title>My  Chart</title>
 </head>
-        <meta charset="utf-8">
-        <title>Pie Charts</title>    
-        <!-- Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="style.css">        
-        <!-- Load D3 -->
-        <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>   
-      
-</head>
+<body>
+  <div class="container">
+    <canvas id="myChart"></canvas>
+  </div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/maps/modules/map.js"></script>
+<script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+
+<!-- Flag sprites service provided by Martijn Lafeber, https://github.com/lafeber/world-flags-sprite/blob/master/LICENSE -->
+<link rel="stylesheet" type="text/css" href="//github.com/downloads/lafeber/world-flags-sprite/flags32.css" />
 
 <main>
     <!-- Landing Area -->
@@ -36,40 +41,19 @@
         <h2>See Work</h2>
       </div>
 
-   
-       
-      <div class="caption">
-	       <div id="pie-container">
-	<p><b> USA Pop | 2018</b></p>
-	<svg id="piechart" width="600" height="400"></svg>
-	 
+<div id="wrapper">
+    <div id="container"></div>
+    <div id="info">
+        <span class="f32"><span id="flag"></span></span>
+        <h2></h2>
+        <div class="subheader">Click countries to view history</div>
+        <div id="country-chart"></div>
     </div>
- <script type="text/javascript" src="pie.js"></script> 
-        <h3>Photo One</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
-      </div>
-       
-      <div class="caption">
-        <h3>Photo Two</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
-      </div>
-       
-      <div class="caption">
-        <h3>Photo Three</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
-      </div>
-      
-      <div class="caption">
-        <h3>Photo Four</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
-      </div>
-       
-      <div class="caption">
-        <h3>Photo Five</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
-      </div>
-    </div>
-  </main>
+</div>
+<script type="text/javascript" src="map.js"></script>
+</body>
+</html>
+
 
   <footer>
     <h3>Get In Touch</h3>
