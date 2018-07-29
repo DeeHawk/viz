@@ -1,0 +1,121 @@
+<!DOCTYPE>
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>My  Chart</title>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/maps/modules/map.js"></script>
+<script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Flag sprites service provided by Martijn Lafeber, https://github.com/lafeber/world-flags-sprite/blob/master/LICENSE -->
+<link rel="stylesheet" type="text/css" href="//github.com/downloads/lafeber/world-flags-sprite/flags32.css" />
+
+<main>
+    <!-- Landing Area -->
+    <div id="landing">
+      <div id="landing-text">
+        <div id="landing-text-inner">
+          <h1>Data Visualization</h1>
+          <h2>World Population Prospects</h2>
+          <a href="#images" class="btn" id="view-work">
+              View Work
+            </a>
+          </div>
+        </div>
+        <div id="landing-image"></div>
+      </div>
+
+      <div id="images">
+        <div id="header">
+
+        </div>
+<script>  Animate Smooth Scroll
+$('#view-work').on('click', function() {
+  const images = $('#images').position().top;
+
+  $('html, body').animate(
+    {
+      scrollTop: images
+    },
+    900//
+  );
+}); </script>
+
+        <div id="images">
+          <div id="header">
+      <h2>About the Visualization</h2>
+    </div>
+
+    <div class="caption">
+        <h3>Description</h3>
+        <p>The visulation about historical worldwide annual population on 56 years. I have obtained the data from the
+          World Bank site to use in this Visualization. Since the
+      world population Prospects final revision done in 2017 so the current population reveals the
+      population of the year 2016. Total population is based on the
+      de facto definition of population, which counts all residents regardless of
+    </div>
+    <div class="caption">
+   <h2>Visualization Guide</h2>
+   <p> The map has the zooming option. The current population can be found by
+    hovering  over any country in the map by tooltip option. The details information about historic population
+     obervable on click which also visualizes country's map. Comparing line charts available
+     by holding the shfit button while clicking on desired countries to compare.
+     </p>
+
+     <div class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5%;" >
+		<h2> Visualization Options: </h2>
+			<div> <i class="fa fa-check" style="font-size:1em; "> Zooming area by double click</i></div>
+			<div> <i class="fa fa-check" style="font-size:1em; "> Rich information on click</i></div>
+			<div> <i class="fa fa-check" style="font-size:1em;  "> Comparing Line chart</i></div>
+			<div><i class="fa fa-check"style="font-size:1em;  "> Detail Historical Graph</i></div>
+			<div><i class="fa fa-check"style="font-size:1em;  "> Country detail with visual Flag</i></div>
+      <div> <i class="fa fa-check" style="font-size:1em; "> Tooltip about current population</i></div>
+	</div>
+
+</div>
+      <div class="container">
+        <canvas id="myMap"></canvas>
+      </div>
+<div id="wrapper">
+    <div id="container"></div>
+    <div id="info">
+        <span class="f32"><span id="flag"></span></span>
+        <h2></h2>
+        <div class="subheader">Click countries to view history</div>
+        <div id="country-chart"></div>
+    </div>
+</div>
+<script type="text/javascript" src="map.js"></script>
+</body>
+
+
+<h2>Thanks to:</h2>
+<p>I am thankful to some useful sites that I learned as follows:
+
+
+  </p
+
+
+<footer>
+   <h3>Get In Touch</h3>
+   <p>Dilruba Hawk</p>
+   <p>Email:
+     <strong>dilruba2@illinois.edu</strong>
+   </p>
+   <p>Portfolio:
+     <strong>https://ehawk.us</strong>
+   </p>
+ </footer>
+</html>

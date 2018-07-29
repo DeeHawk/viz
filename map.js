@@ -98,7 +98,7 @@ $.ajax({
                     $('#info h2').html('Comparing countries');
 
                 }
-                $('#info .subheader').html('<h4>Historical population</h4><small><em>Shift + Click on map to compare countries</em></small>');
+                $('#info .subheader').html('<h4>Historical population</h4><small><em>Shift + Click on map to compare countries population history</em></small>');
 
                 if (!countryChart) {
                     countryChart = Highcharts.chart('country-chart', {
@@ -107,8 +107,9 @@ $.ajax({
                             spacingLeft: 0
                         },
                         credits: {
-                            enabled: false
-                        },
+          text: 'Dilruba',
+          href: 'https://ehawk.us'
+      },
                         title: {
                             text: null
                         },
