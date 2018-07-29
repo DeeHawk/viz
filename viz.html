@@ -8,10 +8,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!-- Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <title>My  Chart</title>
-</head>
-<body>
+ </head>
+ <body>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -37,30 +37,29 @@
         <div id="landing-image"></div>
       </div>
 
-      <div id="images">
+
         <div id="header">
 
         </div>
-<script>  Animate Smooth Scroll
-$('#view-work').on('click', function() {
-  const images = $('#images').position().top;
+    <script>  Animate Smooth Scroll
+      $('#view-work').on('click', function() {
+        const images = $('#images').position().top;
+          $('html, body').animate(
+            {
+              scrollTop: images
+            },
+            900//
+          );
+        }); </script>
 
-  $('html, body').animate(
-    {
-      scrollTop: images
-    },
-    900//
-  );
-}); </script>
-
-        <div id="images">
-          <div id="header">
-      <h2>About the Visualization</h2>
-    </div>
+      <div id="images">
+    <div id="header">
+       <h2>About the Visualization</h2>
+     </div>
 
     <div class="caption">
         <h3>Description</h3>
-        <p>The visulation about historical worldwide annual population on 56 years. I have obtained the data from the
+        <p>The visulization about historical worldwide annual population on 56 years. I have obtained the data from the
           World Bank site to use in this Visualization. Since the
       world population Prospects final revision done in 2017 so the current population reveals the
       population of the year 2016. Total population is based on the
@@ -74,14 +73,14 @@ $('#view-work').on('click', function() {
      by holding the shfit button while clicking on desired countries to compare.
      </p>
 
-     <div class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom:5%;" >
+     <div class="col-md-3 col-sm-6 col-xs-12" ;" >
 		<h2> Visualization Options: </h2>
-			<div> <i class="fa fa-check" style="font-size:1em; "> Zooming area by double click</i></div>
-			<div> <i class="fa fa-check" style="font-size:1em; "> Rich information on click</i></div>
-			<div> <i class="fa fa-check" style="font-size:1em;  "> Comparing Line chart</i></div>
-			<div><i class="fa fa-check"style="font-size:1em;  "> Detail Historical Graph</i></div>
-			<div><i class="fa fa-check"style="font-size:1em;  "> Country detail with visual Flag</i></div>
-      <div> <i class="fa fa-check" style="font-size:1em; "> Tooltip about current population</i></div>
+			<div> <i class="fa fa-check"  > Zooming area by double click</i></div>
+			<div> <i class="fa fa-check"  > Detail information on click</i></div>
+			<div> <i class="fa fa-check"   > Comparing Line chart</i></div>
+			<div><i class="fa fa-check"> Detail Historical Graph</i></div>
+			<div><i class="fa fa-check"> Country detail with visual Flag</i></div>
+      <div> <i class="fa fa-check" > Tooltip about current population</i></div>
 	</div>
 
 </div>
@@ -98,14 +97,81 @@ $('#view-work').on('click', function() {
     </div>
 </div>
 <script type="text/javascript" src="map.js"></script>
+
+
+<div id="header">
+    <h3>Visualization Type</h3>
+    <p>This is a narrative visualization containing scenes, annotations, parameters, and triggers. </p>
+</div>
+
+<div class="caption">
+<h3>Hybrid Structure</h3>
+<p>The hybrid structure was followed in this presentation with drill down story. As a result the
+   viewer can follow a guided instruction to visualize data as well as interctive map and graph. </p>
+</div>
+
+<div class="caption">
+<h3>Scense</h3>
+<p>This hybrid interactive visulization shows follwing scenes:
+
+  <ul>
+    <li>Choropleth map with current population of the country higlighting with different color</li>
+    <li>The higlighting country graph shows detail history with country's flag  </li>
+    <li>The comparing option in the extended chart give the user the opportuinity to compare countries historical population</li>
+  </ul>
+
+  </p>
+</div>
+
+<div class="caption">
+<h3>Annotations</h3>
+<ul>
+  <li>On hovering over over map gives the user the instruction to click for more details view of the country</li>
+  <li>Historical population graph provides the user information about shift+click option to compare population data  </li>
+  <li>Below the chart it demonstrates the color of the particular country once selection for comparision is done </li>
+</ul>
+
+<div class="caption">
+<h3>Parameters</h3>
+<p>Several parameters has been used in this visualization
+  <ul>
+    <li>The number of current population through map tooltip</li>
+    <li>Historical population graph for detailed infomation of 56 years data and population growth </li>
+    <li>Comparing option of the population growth and current situation</li>
+    <li>The particular country's flag as a symbol</li>
+  </ul>
+</p>
+</div>
+
+<div class="caption">
+<h3>Triggers</h3>
+<p>Following triggers has been used for this interactive hybrid visulization
+   <ul>
+     <li>A button to show the user the chart, interactive map, and description as well as scrolling oprtion</li>
+     <li>Tooltip option to provide viewer current data about specific country with guided option of details </li>
+     <li>The graphical demonstration to undesrtand the copmparing  data of particular countries of choice</li>
+   </ul> </p>
+</div>
+
+
+<div class="caption">
+<h3>Thanks to:</h3>
+<p>I have learned from following sites to create this visualization:
+   <ul>
+     <li> <a href="https://data.worldbank.org/indicator/SP.POP.TOTL?end=2017&start=2017&view=map"> World Bank Data</a>  </li>
+        <li> <a href="https://github.com/d3/d3"> Git Hub Page</a>  </li>
+       <li> <a href="https://datamaps.github.io/"> Data Map</a>  </li>
+       <li> <a href="http://www.tutorialsteacher.com/d3js/"> TutorialsTeacher</a>  </li>
+   </ul> </p>
+</div>
+
+
 </body>
 
 
-<h2>Thanks to:</h2>
-<p>I am thankful to some useful sites that I learned as follows:
 
 
-  </p
+
 
 
 <footer>
