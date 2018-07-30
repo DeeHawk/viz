@@ -56,7 +56,7 @@ main {
 }
 
 #landing-image {
-  background: url(hawk.jpeg);
+  background: url(css/world.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
